@@ -13,7 +13,7 @@ response.raise_for_status()
 articles = response.json()
 print("" + str(len(articles)) + ' articles found')
 
-os.makedirs('posts')
+os.makedirs('posts', exist_ok=True)
 
 for post in articles:
     parsed_date = post['published_at'].split('T')[0]
