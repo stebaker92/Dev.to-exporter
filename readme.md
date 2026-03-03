@@ -1,9 +1,8 @@
-# Python Dev.to Post Downloader
-Python script to download all of your Dev.to posts in markdown format.
+# Dev.to Exporter
 
-I Created this script to import my Dev.to posts into my self hosted blog
+A Python script to export all of your Dev.to articles as local Markdown files — useful for migrating to a self-hosted blog or archiving your content.
 
 ## Usage
 - Create a dev.to API KEY and put it in a `.env` file (or rename `.env.example`)
 - Install python requirements `pip3 install -r requirements.txt`
-- Run `python3 dev.to.py` to download all posts to a `posts/` directory
+- Run `python3 dev.to-exporter.py` to download all posts to a `posts/` directory
