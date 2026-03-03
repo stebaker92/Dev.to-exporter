@@ -5,6 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 DEV_TO_API_KEY = os.environ.get("DEV_TO_API_KEY")
 
+if not DEV_TO_API_KEY:
+    DEV_TO_API_KEY = input("Enter your Dev.to API key: ").strip()
+
 response = requests.get('https://dev.to/api/articles/me/all',
                         headers={'api-key': DEV_TO_API_KEY})
 
